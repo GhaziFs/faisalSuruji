@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { motion } from 'framer-motion';
+// Fixed imports: Assuming you moved App and components into /src
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TimelineSection from './components/TimelineSection';
@@ -7,8 +8,8 @@ import QuotesSection from './components/QuotesSection';
 import PublicationsSection from './components/PublicationsSection';
 import ArticlesSection from './components/ArticlesSection';
 import Footer from './components/Footer';
+import AcademicTimeline from './components/AcademicTimeline';
 
-// Define the interface for the Props
 interface ScrollRevealProps {
   children: ReactNode;
 }
@@ -26,26 +27,32 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({ children }) => (
 
 export default function App(): JSX.Element {
   return (
-    <div className="min-h-screen text-right bg-[#fdfcf8] overflow-x-hidden">
+    /* Added dir="rtl" to handle Arabic text flow and punctuation correctly */
+    <div className="min-h-screen bg-[#fdfcf8] overflow-x-hidden" dir="rtl">
       <Navbar />
       
-      <Hero />
+      <main>
+        <Hero />
 
-      <ScrollReveal>
-        <TimelineSection />
-      </ScrollReveal>
+ <ScrollReveal>
+          <AcademicTimeline />
+        </ScrollReveal>
+        <ScrollReveal>
+          <TimelineSection />
+        </ScrollReveal>
 
-      <ScrollReveal>
-        <QuotesSection />
-      </ScrollReveal>
+        <ScrollReveal>
+          <QuotesSection />
+        </ScrollReveal>
 
-      <ScrollReveal>
-        <PublicationsSection />
-      </ScrollReveal>
+        <ScrollReveal>
+          <PublicationsSection />
+        </ScrollReveal>
 
-      <ScrollReveal>
-        <ArticlesSection />
-      </ScrollReveal>
+        <ScrollReveal>
+          <ArticlesSection />
+        </ScrollReveal>
+      </main>
 
       <Footer />
     </div>

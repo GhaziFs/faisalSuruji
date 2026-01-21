@@ -2,7 +2,7 @@ import React from 'react';
 import { Quote as QuoteIcon } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 import Section from './Section';
-import { QUOTES } from '../src/constants';
+import { QUOTES } from '../constants';
 
 // 1. Define the Quote Interface
 interface Quote {

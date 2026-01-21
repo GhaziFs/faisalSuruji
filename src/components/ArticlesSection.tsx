@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 import Section from './Section';
-import { ARTICLES, ARTICLE_TYPES } from '../src/constants';
+import { ARTICLES, ARTICLE_TYPES } from '../constants';
 
 // 1. Define the Article Type
 interface Article {

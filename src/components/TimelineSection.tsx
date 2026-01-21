@@ -1,8 +1,8 @@
 import React from 'react';
-import { GraduationCap } from 'lucide-react';
+import { BriefcaseBusiness } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 import Section from './Section';
-import { TIMELINE_DATA } from '../src/constants'; // Ensure this array is typed as TimelineItem[]
+import { TIMELINE_DATA } from '../constants'; // Ensure this array is typed as TimelineItem[]
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -52,7 +52,7 @@ export default function TimelineSection(): JSX.Element {
                   <span className="text-xl font-bold text-amber-800 font-serif-heading">
                     {item.year}
                   </span>
-                  <GraduationCap size={20} className="text-slate-300 group-hover:text-amber-700 transition-colors" />
+                  <BriefcaseBusiness size={20} className="text-slate-300 group-hover:text-amber-700 transition-colors" />
                 </div>
                 
                 <h3 className="text-xl font-bold text-slate-800 mb-3 font-serif-heading leading-tight">

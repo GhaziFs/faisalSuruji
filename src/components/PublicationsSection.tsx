@@ -2,7 +2,7 @@ import React from 'react';
 import { Download } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 import Section from './Section';
-import { PUBLICATIONS } from '../src/constants';
+import { PUBLICATIONS } from '../constants';
 
 // 1. Define the Publication Interface
 interface Publication {
