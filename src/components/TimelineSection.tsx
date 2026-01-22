@@ -25,7 +25,7 @@ const itemVariants: Variants = {
 
 export default function TimelineSection(): JSX.Element {
   return (
-    <Section id="timeline" title="المسيرة المهنية" bgColor="bg-white">
+    <Section  title="المسيرة المهنية" bgColor="bg-white">
       <motion.div 
         className="max-w-6xl mx-auto px-4" 
         dir="rtl"

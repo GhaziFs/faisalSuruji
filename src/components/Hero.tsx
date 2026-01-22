@@ -1,6 +1,7 @@
 import React from 'react';
 import { BookOpen } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
+import heroImg from '../assets/heroImg.jpeg'
 
 // Animation Variants
 const textContainerVariants: Variants = {
@@ -49,15 +50,16 @@ export default function Hero(): JSX.Element {
             variants={fadeInUp}
             className="font-serif-heading text-5xl md:text-7xl font-bold text-slate-900 leading-tight"
           >
-            إرث من <br />
-            <span className="text-amber-800 italic">العطاء المعرفي.</span>
+           رحلة طويلة في  <br />
+            <span className="text-amber-800 italic">دروب التعليم </span>
           </motion.h1>
 
           <motion.p 
             variants={fadeInUp}
             className="font-serif-body text-xl text-slate-700 leading-relaxed max-w-2xl"
           >
-            كرست الدكتورة فيصل سروجي أكثر من أربعين عاماً لفهم آليات التعلم، وتطوير أساليب التدريس، وصياغة مستقبل التربية. كباحثة وأكاديمية ملهمة، تركت بصمة لا تُمحى في قلوب وعقول أجيال من المعلمين والباحثين حول العالم العربي.
+بدأت مسيرتي المهنية محاضرًا في أحد المعاهد، ثم عملت مدرسًا لعلم النفس في عدد من المدارس. ومع مرور الوقت، انتقلت إلى مجال الإرشاد التربوي، قبل أن أتولى إدارة مدرسة. على امتداد أكثر من أربعين عامًا، انشغلت بالتعليم وفهم التعلم والاهتمام بالجوانب النفسية للعملية التربوية. وبعد التقاعد، ما زلت أواصل القراءة والكتابة في القضايا التربوية التي شغلتني طوال حياتي المهنية.
+ 
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex flex-wrap gap-4 pt-4">
@@ -86,7 +88,7 @@ export default function Hero(): JSX.Element {
         >
           <div className="relative z-10 rounded shadow-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000 group">
             <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+              src={heroImg}
               alt="فيصل سروجي"
               className="w-full h-auto object-cover aspect-[4/5] group-hover:scale-105 transition-transform duration-1000"
             />
