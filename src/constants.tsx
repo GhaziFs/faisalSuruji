@@ -1,6 +1,7 @@
 /* =========================
    Article Types
 ========================= */
+import bookCover from './assets/bookCover.jpeg';
 
 export const ARTICLE_TYPES = {
   ONLINE: 'رابط إلكتروني',
@@ -153,7 +154,7 @@ export const PUBLICATIONS: Publication[] = [
     description:"مما عرضه الخاطر في مجالات شتى ومن وحي القراءة ",
     pdfUrl: '#',
     coverImage:
-      'src/assets/bookCover.jpeg',
+      bookCover,
   },
   
 ];
