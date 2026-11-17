@@ -52,7 +52,9 @@ export default function QuotesSection(): JSX.Element {
         viewport={{ once: true }}
       >
         <QuoteIcon size={300} className="text-amber-600" />
+          
       </motion.div>
+       
 
       <div className="max-w-4xl mx-auto px-4 relative z-10" dir="rtl">
         <motion.div 

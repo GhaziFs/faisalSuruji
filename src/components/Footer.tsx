@@ -5,7 +5,7 @@ export default function Footer() {
         <h3 className="font-serif-heading text-3xl font-bold text-slate-800 mb-6">فيصل سروجي</h3>
 
         <p className="text-slate-500 font-serif-body italic text-xl mb-10 max-w-xl mx-auto leading-relaxed">
-          "نحن جميعاً طلاب في مدرسة الحياة، نتعلم حتى النفس الأخير، فالمعرفة بحر لا ساحل له."
+          "بوح معلم"
         </p>
 
         
